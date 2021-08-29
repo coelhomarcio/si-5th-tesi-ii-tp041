@@ -1,0 +1,61 @@
+h3 {
+  font-size: 1.5rem;
+  text-indent: 2rem;
+}
+
+p {
+  text-align: center;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-gap: 1rem;
+
+  form {
+    width: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    mat-form-field {
+      width: 100%;
+    }
+
+    p {
+      color: #f44336;
+      font-size: .7rem;
+    }
+
+    button {
+      text-transform: uppercase;
+      letter-spacing: .05rem;
+    }
+  }
+
+  table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-gap: 1rem;
+
+    tr {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      grid-gap: 1rem;
+
+      td {
+        width: 2rem;
+        height: 2rem;
+        font-weight: 900;
+        text-align: center;
+        line-height: 2rem;
+        border-radius: 50%;
+        color: #fff;
+        background-color: #3f51b5;
+      }
+    }
+  }
+}
