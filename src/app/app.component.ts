@@ -1,10 +1,17 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector:    "app-root",
+  templateUrl: "./app.component.html",
+  styleUrls:   ["./app.component.scss"]
 })
 export class AppComponent {
-  title = 'introduction-site';
+  title = "Site de Introdução";
+  home = "Home";
+  about = "Sobre";
+  numbers = "Números";
+
+  constructor() {
+  }
+
 }
