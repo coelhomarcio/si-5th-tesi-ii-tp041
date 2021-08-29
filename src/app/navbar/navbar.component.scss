@@ -1,0 +1,15 @@
+mat-toolbar-row {
+  justify-content: space-between;
+}
+
+mat-list {
+  padding: 0;
+  display: flex;
+
+  a {
+    font-size: .75rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .05rem;
+  }
+}

@@ -1,0 +1,23 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <h1>
+      {{ appComponent.title }}
+    </h1>
+    <nav>
+      <mat-list role="list">
+        <mat-list-item role="listitem">
+          <a mat-stroked-button
+             routerLink="home">{{ appComponent.home }}</a>
+        </mat-list-item>
+        <mat-list-item role="listitem">
+          <a mat-stroked-button
+             routerLink="about">{{ appComponent.about }}</a>
+        </mat-list-item>
+        <mat-list-item role="listitem">
+          <a mat-stroked-button
+             routerLink="numbers">{{ appComponent.numbers }}</a>
+        </mat-list-item>
+      </mat-list>
+    </nav>
+  </mat-toolbar-row>
+</mat-toolbar>
