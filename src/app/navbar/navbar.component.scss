@@ -1,15 +1,41 @@
-mat-toolbar-row {
-  justify-content: space-between;
+mat-toolbar {
+  box-shadow: 0 0 .5rem #121212;
+
+  mat-toolbar-row {
+    justify-content: space-between;
+
+    h1 {
+      font-size: 2.7rem;
+    }
+
+    nav {
+      mat-list {
+        padding: 0;
+        display: none;
+
+        a {
+          font-size: 1.6rem;
+          color: #fff;
+          text-transform: uppercase;
+          letter-spacing: .1rem;
+        }
+      }
+    }
+  }
 }
 
-mat-list {
-  padding: 0;
-  display: flex;
+@media (min-width: 768px) {
+  mat-toolbar {
+    mat-toolbar-row {
+      nav {
+        button {
+          display: none;
+        }
 
-  a {
-    font-size: .75rem;
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: .05rem;
+        mat-list {
+          display: flex;
+        }
+      }
+    }
   }
 }

@@ -4,6 +4,14 @@
       {{ appComponent.title }}
     </h1>
     <nav>
+      <button mat-icon-button [matMenuTriggerFor]="menu">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu" xPosition="before" yPosition="below">
+        <a mat-menu-item routerLink="home">{{ appComponent.home }}</a>
+        <a mat-menu-item routerLink="about">{{ appComponent.about }}</a>
+        <a mat-menu-item routerLink="numbers">{{ appComponent.numbers }}</a>
+      </mat-menu>
       <mat-list role="list">
         <mat-list-item role="listitem">
           <a mat-stroked-button
