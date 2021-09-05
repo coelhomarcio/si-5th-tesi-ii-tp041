@@ -1,5 +1,5 @@
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   text-indent: 2rem;
 }
 
@@ -14,7 +14,7 @@ div {
   grid-gap: 1rem;
 
   form {
-    width: 10rem;
+    width: 16rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,12 +25,14 @@ div {
 
     p {
       color: #f44336;
-      font-size: .7rem;
+      font-size: 1rem;
+      font-weight: 700;
     }
 
     button {
+      font-size: 1.6rem;
       text-transform: uppercase;
-      letter-spacing: .05rem;
+      letter-spacing: .1rem;
     }
   }
 
@@ -42,16 +44,18 @@ div {
 
     tr {
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
       align-items: center;
       grid-gap: 1rem;
 
       td {
-        width: 2rem;
-        height: 2rem;
+        width: 4rem;
+        height: 4rem;
+        font-size: 2rem;
         font-weight: 900;
         text-align: center;
-        line-height: 2rem;
+        line-height: 4rem;
         border-radius: 50%;
         color: #fff;
         background-color: #3f51b5;

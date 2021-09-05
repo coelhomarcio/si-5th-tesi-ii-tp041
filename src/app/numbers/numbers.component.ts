@@ -13,17 +13,17 @@ import { AppComponent } from "../app.component";
 export class NumbersComponent implements OnInit {
   appComponent = new AppComponent();
   numQty = NaN;
+  numQtyModel = NaN;
   numList: number[] = [];
   error = false;
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
-
   public submit() {
+    this.numQty = this.numQtyModel;
     this.numList = [];
-    if (this.numQty >= 1 && this.numQty <= 9)
+    this.error = (this.numQty < 1 || this.numQty > 9 || isNaN(this.numQty));
+    if (!this.error)
       while (this.numList.length < this.numQty) {
         let numTemp = (parseInt(String(Math.random() * 100)));
         if (numTemp === 0)
@@ -31,7 +31,9 @@ export class NumbersComponent implements OnInit {
         if (!this.numList.includes(numTemp))
           this.numList.push(numTemp);
       }
-    this.error = (this.numQty < 1 || this.numQty > 9 || isNaN(this.numQty));
     return this.numList;
+  }
+
+  ngOnInit(): void {
   }
 }
