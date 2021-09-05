@@ -1,5 +1,5 @@
 h3 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-indent: 2rem;
 }
 
@@ -11,11 +11,11 @@ p {
     text-decoration: none;
     display: flex;
     align-items: center;
-    grid-gap: .25rem;
+    grid-gap: .5rem;
     transition: color 250ms ease-in-out;
 
     mat-icon {
-      font-size: 1rem;
+      font-size: 2rem;
       text-indent: initial;
       transition: transform 250ms ease-in-out;
     }

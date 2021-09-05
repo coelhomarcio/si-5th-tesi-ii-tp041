@@ -14,12 +14,11 @@ export class AboutComponent implements OnInit {
   appComponent = new AppComponent();
   name = "Marcio Coelho";
   ra = "0050831921015";
-  githubPage = "https://coelhomarcio.github.io/";
-  githubRepo = "https://github.com/coelhomarcio/";
+  githubPage = "https://coelhomarcio.github.io";
+  githubRepo = "https://github.com/coelhomarcio";
 
   constructor() { }
 
   ngOnInit(): void {
   }
-
 }
