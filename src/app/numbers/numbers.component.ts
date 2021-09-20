@@ -22,12 +22,9 @@ export class NumbersComponent implements OnInit {
   public submit() {
     this.numQty = this.numQtyModel;
     this.numList = [];
-    this.error = (this.numQty < 1 || this.numQty > 9 || isNaN(this.numQty));
-    if (!this.error)
+    if (!(this.numQty < 1 || this.numQty > 9 || isNaN(this.numQty)))
       while (this.numList.length < this.numQty) {
-        let numTemp = (parseInt(String(Math.random() * 100)));
-        if (numTemp === 0)
-          numTemp = 100;
+        let numTemp = (parseInt(String(Math.random() * 60 + 1)));
         if (!this.numList.includes(numTemp))
           this.numList.push(numTemp);
       }
