@@ -12,7 +12,8 @@
     <form (ngSubmit)="submit()">
       <mat-form-field appearance="fill">
         <mat-label>Digite um número</mat-label>
-        <input type="number" matInput placeholder="1 a 9" [(ngModel)]="numQtyModel" [ngModelOptions]="{standalone: true}">
+        <input type="number" matInput placeholder="1 a 9" [(ngModel)]="numQtyModel"
+               [ngModelOptions]="{standalone: true}">
       </mat-form-field>
       <p *ngIf="error">
         Digite apenas números de 1 a 9!
